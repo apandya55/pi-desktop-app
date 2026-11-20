@@ -1,0 +1,31 @@
+.menu-surface.composer-suggestions {
+  width: min(420px, var(--radix-popover-trigger-width, 420px), var(--radix-popover-content-available-width, 420px));
+}
+
+.composer-suggestions [cmdk-root] {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.composer-options .composer-model-trigger { max-width: min(220px, 100%); }
+
+@container composer (max-width: 440px) {
+  .composer-toolbar { gap: 4px; }
+  .composer-context, .composer-options { gap: 2px; }
+}
+
+@container composer (max-width: 340px) {
+  .composer-toolbar { flex-wrap: wrap; }
+  .composer-options { margin-left: auto; max-width: 100%; }
+}
+
+.composer-suggestions .menu-row-label {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.composer-suggestions .menu-row-label > strong { flex: 0 1 auto; }
+.composer-suggestions .menu-row-label > small { flex: 0 3 auto; }
+.composer-suggestions .menu-row-detail { flex-shrink: 0; }

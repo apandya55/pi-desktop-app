@@ -1,0 +1,26 @@
+import type { PiBridge } from './types'
+
+export const channels = {
+  listWorkspaces: 'pi:list-workspaces',
+  chooseWorkspace: 'pi:choose-workspace',
+  createSession: 'pi:create-session',
+  openSession: 'pi:open-session',
+  listSessions: 'pi:list-sessions',
+  prompt: 'pi:prompt',
+  abort: 'pi:abort',
+  reloadSession: 'pi:reload-session',
+  compactSession: 'pi:compact-session',
+  renameSession: 'pi:rename-session',
+  readConfig: 'pi:read-config',
+  writeConfig: 'pi:write-config',
+  revealConfigDirectory: 'pi:reveal-config-directory',
+  setToolMode: 'pi:setToolMode',
+  cycleThinkingLevel: 'pi:cycle-thinking-level',
+  setModel: 'pi:set-model',
+  setThinkingLevel: 'pi:set-thinking-level',
+  listFiles: 'pi:list-files',
+  gitStatus: 'pi:git-status',
+  gitDiff: 'pi:git-diff',
+  onMenuAction: 'pi:menu-action',
+  subscribe: 'pi:session-event',
+} as const satisfies Record<keyof PiBridge, string>
