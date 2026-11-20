@@ -3,7 +3,14 @@
   "productName": "Pi",
   "version": "0.1.0",
   "description": "A lightweight macOS desktop app for the Pi coding agent",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apandya55/pi-desktop-app.git"
+  },
+  "homepage": "https://github.com/apandya55/pi-desktop-app#readme",
+  "bugs": {
+    "url": "https://github.com/apandya55/pi-desktop-app/issues"
+  },
   "license": "MIT",
   "type": "module",
   "main": "out/main/main.js",
